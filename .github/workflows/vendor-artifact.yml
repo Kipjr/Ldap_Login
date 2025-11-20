@@ -9,7 +9,7 @@ jobs:
    generate-artifact:
     runs-on: ubuntu-latest
     steps:
-      - uses: "actions/checkout@v5"
+      - uses: "actions/checkout@v6"
       - name: "Remove folder contents of ./vendor/"
         run: | 
            find ./vendor/* -maxdepth 0 -type d -execdir  /bin/rm -r {} \;
