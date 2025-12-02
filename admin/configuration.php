@@ -7,6 +7,7 @@ $template->assign(
   array(
     'PLUGIN_ACTION' => get_root_url().'admin.php?page=plugin-Ldap_Login-configuration',
     'PLUGIN_CHECK' => get_root_url().'admin.php?page=plugin-Ldap_Login-configuration',
+    'LDAP_PHP_EXTENSION_LOADED' => extension_loaded('ldap'),
     ));
 
 $me = new Ldap();
