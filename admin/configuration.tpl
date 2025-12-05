@@ -7,7 +7,7 @@
 {if isset($WARN_GENERAL) and $WARN_GENERAL}<i style="color:red;">{$WARN_GENERAL|@translate}</i>{/if}<br>
 <form method="post" action="{$PLUGIN_ACTION}" class="general">
 
-	{if (!extension_loaded('ldap'))}
+	{if !$LDAP_PHP_EXTENSION_LOADED}
 		<p style="color:red;">{'Warning: LDAP Extension missing.'|@translate}</p>
 		<br />
 	{/if}
